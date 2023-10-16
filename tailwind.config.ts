@@ -15,6 +15,11 @@ const config: Config = {
       },
       fontFamily : {
          Poppins: ["Poppins"]
+      },
+      colors : {
+        'primary' : '#127C71',
+        'secondary' : '#FFAF35',
+        'bcolor': '#FDFDFD'
       }
     },
   },
