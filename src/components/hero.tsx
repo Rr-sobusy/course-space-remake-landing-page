@@ -1,4 +1,6 @@
 import React from 'react'
+import HeroImg from '../../public/images/th (1).jpeg'
+import Image from 'next/image';
 
 type Props = {}
 
@@ -14,10 +16,12 @@ export const Page = (props: Props) => {
             </h1>  
             <p>Lets take</p>    
           </div> */}
-          <div className=" md:basis-2/3">
+          <div className=" md:basis-[60%]">
             <h1 className="mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins">
-              <span className="text-[#127C71] border-b-4 border-[#FFDD84] leading-loose">Improve</span> your skill with
-              different way.
+              <span className="text-[#127C71] border-b-4 border-[#FFDD84] leading-loose">
+                Improve
+              </span>{" "}
+              your skill with different way.
             </h1>
             <p className="mt-6 leading-loose text-base text-center md:w-[450px] mx-3 md:mx-0 text-gray-500 md:text-start">
               Lets take an online course to improve your skills in a different
@@ -25,10 +29,20 @@ export const Page = (props: Props) => {
               speed. So you can study comfortable and asborb the material
               easily.
             </p>
-            <div className='flex justify-center gap-3 mt-6 md:justify-start'>
-                <button className='px-3 py-2 border text-[#127C71] font-semibold border-[#127C71] rounded-lg'>Get Started</button>
-                <button className='px-3 py-2 bg-[#127C71] rounded-lg font-semibold text-white'>Watch Video</button>
+            <div className="flex justify-center gap-3 mt-6 md:justify-start">
+              <button className="px-3 py-2 border text-[#127C71] font-semibold border-[#127C71] rounded-lg">
+                Get Started
+              </button>
+              <button className="px-3 py-2 bg-[#127C71] rounded-lg font-semibold text-white">
+                Watch Video
+              </button>
             </div>
+          </div>
+
+          {/*   Hero Image Container */}
+          <div className="md:basis-[40%] md:flex md:flex-col justify-between">
+            <Image className="w-full h-full rounded-lg" src={HeroImg} alt="" />
+            <div className='h-[85px] max-w-[380px] md:w-[50%] bg-blue-300'></div>
           </div>
         </div>
       </div>
