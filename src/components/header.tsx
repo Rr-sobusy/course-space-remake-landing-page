@@ -60,7 +60,7 @@ export const Page = (props: Props) => {
           {/*  Mobile Menus */}
           <div
             className={`fixed z-30 ${
-              nav ? "h-screen" : "h-[0]"
+              nav ? "h-screen" : "h-0"
             } duration-500 flex-row justify-center items-center left-0 top-0 h-screen w-full bg-bcolor`}
           >
             <Close
