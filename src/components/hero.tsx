@@ -22,7 +22,7 @@ const HeroStats: { label: string; value: string }[] = [
 
 export const Page = (props: Props) => {
   return (
-    <section className="my-4 bg-bcolor">
+    <section className="my-[3rem] bg-bcolor">
       <div className='max-w-[1200px] mx-auto'>
         <div className="flex flex-col px-3 md:flex-row">
           {/* <div className="">
@@ -35,9 +35,9 @@ export const Page = (props: Props) => {
           <div className=" md:basis-[60%]">
             <h1 className="mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins">
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
-                Improve
-              </span>{" "}
-              your skill with different way.
+                Improve{" "}
+              </span>
+               your skill with different way.
             </h1>
             <p className="mt-6 leading-loose text-base text-center md:w-[450px] mx-3 md:mx-0 text-gray-500 md:text-start">
               Lets take an online course to improve your skills in a different
@@ -80,12 +80,13 @@ export const Page = (props: Props) => {
             </div>
           </div>
         </div>
+
         {/*   Hero Stats    */}
-        <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-3 rounded-sm shadow-md md:flex-row md:justify-between md:px-[5rem]">
+        <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-3 rounded-lg shadow-md md:flex-row md:justify-between md:px-[5rem]">
           {HeroStats.map((stats, index) => (
-            <div key={index} className="flex flex-col items-center justify-center gap-3 font-Poppins">
+            <div key={index} className="flex flex-col items-center justify-center gap-2 font-Poppins">
               <h1 className="text-[2.75rem] font-bold text-secondary">{stats.value}</h1>
-              <p className='text-lg font-semibold text-gray-600'>{stats.label}</p>
+              <p className='text-lg tracking-wider font-semibold text-gray-600'>{stats.label}</p>
             </div>
           ))}
         </div>
