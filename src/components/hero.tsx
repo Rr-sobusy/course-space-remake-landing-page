@@ -46,10 +46,10 @@ export const Page = (props: Props) => {
               easily.
             </p>
             <div className="flex justify-center gap-3 mt-6 md:justify-start">
-              <button className="px-4 py-2 font-semibold border rounded-lg text-primary border-primary">
+              <button className="px-4 hover:animate-[custom_2s_ease-out_.0s_infinite] py-2 font-semibold border rounded-lg text-primary border-primary">
                 Get Started
               </button>
-              <button className="flex items-center gap-2 px-4 py-2 font-semibold text-white rounded-lg bg-primary">
+              <button className="flex hover:animate-[custom_2s_ease-out_.0s_infinite] items-center gap-2 px-4 py-2 font-semibold text-white rounded-lg bg-primary">
                 <span>
                   <Play size={20} />
                 </span>
@@ -82,7 +82,7 @@ export const Page = (props: Props) => {
         </div>
 
         {/*   Hero Stats    */}
-        <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-3 rounded-lg shadow-md md:flex-row md:justify-between md:px-[5rem]">
+        <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-[2.75rem] rounded-lg shadow-md md:flex-row md:justify-between md:px-[5rem]">
           {HeroStats.map((stats, index) => (
             <div key={index} className="flex flex-col items-center justify-center gap-2 font-Poppins">
               <h1 className="text-[2.75rem] font-bold text-secondary">{stats.value}</h1>
