@@ -1,8 +1,9 @@
 import React from 'react'
-import HeroImg from '../../public/images/th (1).jpeg'
 import Image from 'next/image';
 import {AiOutlinePlayCircle as Play} from 'react-icons/ai'
 import {PiCertificateLight as Certificate} from 'react-icons/pi'
+
+
 
 type Props = {}
 
@@ -25,13 +26,6 @@ export const Page = (props: Props) => {
     <section className="my-[3rem] bg-bcolor">
       <div className='max-w-[1200px] mx-auto'>
         <div className="flex flex-col px-3 md:flex-row">
-          {/* <div className="">
-            <h1 className="mx-auto md:mx-0 text-4xl md:text-6xl md:max-w-[500px] max-w-[350px] font-bold text-center font-Poppins">
-              <span className="text-[#127C71]">Improve</span> your skill with
-              different way
-            </h1>  
-            <p>Lets take</p>    
-          </div> */}
           <div className=" md:basis-[60%]">
             <h1 className="mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins">
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
@@ -61,8 +55,10 @@ export const Page = (props: Props) => {
           {/*   Hero Image Container */}
           <div className="md:basis-[40%] font-Poppins md:flex md:flex-col justify-between">
             <Image
+              width={500}
+              height={500}
               className="relative z-0 w-full h-full rounded-lg"
-              src={HeroImg}
+              src="/images/th (1).jpeg"
               alt=""
             />
             <div className="relative z-10 md:mt-5 -mt-[4rem] flex max-w-[330px] md:w-[50%] md:-ml-[2rem] bg-white shadow-md rounded-xl">
@@ -84,9 +80,9 @@ export const Page = (props: Props) => {
         {/*   Hero Stats    */}
         <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-[2.75rem] rounded-lg shadow-md md:flex-row md:justify-between md:px-[5rem]">
           {HeroStats.map((stats, index) => (
-            <div key={index} className="flex flex-col items-center justify-center gap-2 font-Poppins">
+            <div key={index} className="flex flex-col items-center justify-center gap-2 mx-3 font-Poppins">
               <h1 className="text-[2.75rem] font-bold text-secondary">{stats.value}</h1>
-              <p className='text-lg tracking-wider font-semibold text-gray-600'>{stats.label}</p>
+              <p className='text-lg font-semibold tracking-wider text-gray-600'>{stats.label}</p>
             </div>
           ))}
         </div>

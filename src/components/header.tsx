@@ -92,15 +92,6 @@ export const Page = (props: Props) => {
                 Sign Up
               </button>
             </div>
-
-            {/* <div className="absolute flex items-center justify-center w-full h-16 gap-2 bottom-6">
-              <button className="px-3 py-2 border-2 border-[#127C71] rounded-lg text-[#127C71]">
-                Sign In
-              </button>
-              <button className="px-3 py-2 bg-[#127C71] rounded-lg text-white">
-                Sign Up
-              </button>
-            </div> */}
           </div>
         </div>
       </header>
