@@ -10,11 +10,35 @@ export const Page = (props: Props) => {
     query: "(max-width : 1024px)",
   });
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: isTablet ? 1 : 3,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    appendDots: (dots:any) => (
+      <div
+        style={{
+          backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px"
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    customPaging: (i:any) => (
+      <div
+        style={{
+          width: "30px",
+          color: "blue",
+          border: "1px blue solid"
+        }}
+      >
+        {i + 1}
+      </div>
+    )
   };
   return (
     <section className="bg-[#F2F5F5] font-Poppins">
@@ -27,9 +51,16 @@ export const Page = (props: Props) => {
           <div className="lg:max-w-[75%]">
             <Slider {...settings}>
               {CourseDatas.map((courseItem, index) => (
-                <CourseCard key={index} item={courseItem} />
+                 <CourseCard item={courseItem} />
+
               ))}
             </Slider>
+
+            {/* Custom Paginator */}
+            <div className="flex gap-2 mt-5">
+                <div className="h-2 w-[2.5rem] rounded-lg bg-[#D6D8D8]"></div>
+                <div className="h-2 w-[2.5rem] rounded-lg bg-primary"></div>
+            </div>
           </div>
         </div>
       </div>
