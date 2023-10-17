@@ -24,8 +24,8 @@ export const Page = (props: Props) => {
             Most Popular Courses
           </h1>
           {/*   *** Carousel Component starts here */}
-          <div className="lg:max-w-[75%] h-full">
-            <Slider className="flex h-full" {...settings}>
+          <div className="lg:max-w-[75%]">
+            <Slider {...settings}>
               {CourseDatas.map((courseItem, index) => (
                 <CourseCard key={index} item={courseItem} />
               ))}
