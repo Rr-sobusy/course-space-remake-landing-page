@@ -23,8 +23,8 @@ const HeroStats: { label: string; value: string }[] = [
 
 export const Page = (props: Props) => {
   return (
-    <section className="my-[3rem] bg-bcolor">
-      <div className='max-w-[1200px] mx-auto'>
+    <section className="bg-bcolor">
+      <div className='max-w-[1200px] my-[3.5rem] mx-auto'>
         <div className="flex flex-col px-3 md:flex-row">
           <div className=" md:basis-[60%]">
             <h1 className="__hero-text">

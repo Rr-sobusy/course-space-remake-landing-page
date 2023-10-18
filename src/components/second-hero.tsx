@@ -9,7 +9,7 @@ export const Page = (props: Props) => {
     <section className="bg-bcolor my-[3rem]">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex flex-col md:flex-row">
-          <div className="md:basis-[40%] flex justify-center">
+          <div className="md:basis-[50%] flex justify-center">
             <Image
               src="/images/home-feature.png"
               height={500}
@@ -17,7 +17,7 @@ export const Page = (props: Props) => {
               alt=""
             />
           </div>
-          <div className="px-5 mt-7 md:mt-0">
+          <div className="px-5 mt-7 md:mt-0 grow">
             <h1 className="__hero-text text-center md:text-start px-6">
               Make your{" "}
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">

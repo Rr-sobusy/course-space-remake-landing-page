@@ -31,9 +31,9 @@ export const Page = (props: Props) => {
   };
   return (
     <section className="bg-[#F2F5F5] font-Poppins">
-      <div className="max-w-[1200px] mx-auto py-[2.75rem]">
+      <div className="max-w-[1200px] mx-auto py-[6.5rem]">
         <div className="flex flex-col lg:gap-7 lg:flex-row mx-[24px] lg:items-center">
-          <h1 className="text-3xl text-gray-700 mb-[2rem] lg:mb-0 lg:basis-[25%] font-bold text-center lg:text-start lg:text-5xl">
+          <h1 className="text-3xl text-gray-600 lg:mb-0 lg:basis-[25%] font-bold text-center lg:text-start lg:text-5xl">
             Most Popular Courses
           </h1>
           {/*   *** Carousel Component starts here */}
