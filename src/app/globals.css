@@ -11,7 +11,7 @@
 }
 
 .__hero-text {
-  @apply mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins
+  @apply mx-auto text-3xl md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins
 }
 
 .__hero-subtext {

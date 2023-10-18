@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import Slider from "react-slick";
 import { CourseCard, CourseDatas } from "./courses";
@@ -18,7 +20,7 @@ export const Page = (props: Props) => {
     autoplay: true,
     autoplaySpeed: 2000,
     appendDots: (dots: any) => (
-      <div className="bg-blue-200 flex">{dots}</div>
+      <div className="flex bg-blue-200">{dots}</div>
     ),
     customPaging: (i: number) => (
       <div style={{ display: "flex" }}>

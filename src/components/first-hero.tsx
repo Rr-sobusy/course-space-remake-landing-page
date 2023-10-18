@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import { CustomTypography } from '@/ui-components/CustomTypography';
 import {AiOutlinePlayCircle as Play} from 'react-icons/ai'
 import {PiCertificateLight as Certificate} from 'react-icons/pi'
 
@@ -24,15 +25,15 @@ const HeroStats: { label: string; value: string }[] = [
 export const Page = (props: Props) => {
   return (
     <section className="bg-bcolor">
-      <div className='max-w-[1200px] my-[3.5rem] mx-auto'>
+      <div className="max-w-[1200px] my-[3.5rem] mx-auto">
         <div className="flex flex-col px-3 md:flex-row">
           <div className=" md:basis-[60%]">
-            <h1 className="__hero-text">
+            <CustomTypography variant="heroText">
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
                 Improve{" "}
               </span>
-               your skill with different way.
-            </h1>
+              your skill with different way.
+            </CustomTypography>
             <p className="__hero-subtext md:w-[450px] mx-3 md:mx-0">
               Lets take an online course to improve your skills in a different
               way, you can set your own study time according to your learning
@@ -80,9 +81,16 @@ export const Page = (props: Props) => {
         {/*   Hero Stats    */}
         <div className="flex flex-col gap-3 md:gap-0 px-3 my-6 py-[2.75rem] rounded-lg shadow-md md:flex-row md:justify-between md:px-[5rem]">
           {HeroStats.map((stats, index) => (
-            <div key={index} className="flex flex-col items-center justify-center gap-2 mx-3 font-Poppins">
-              <h1 className="text-[2.75rem] font-bold text-secondary">{stats.value}</h1>
-              <p className='text-lg font-semibold tracking-wider text-gray-600'>{stats.label}</p>
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center gap-2 mx-3 font-Poppins"
+            >
+              <h1 className="text-[2.75rem] font-bold text-secondary">
+                {stats.value}
+              </h1>
+              <p className="text-lg font-semibold tracking-wider text-gray-600">
+                {stats.label}
+              </p>
             </div>
           ))}
         </div>

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { AiOutlineMenu as Menu, AiOutlineClose as Close } from "react-icons/ai";
+import CustomButton from "@/ui-components/CustomButton";
 
 type Props = {};
 
@@ -39,14 +40,7 @@ export const Page = (props: Props) => {
               </a>
             </li>
           </ul>
-          <div className="hidden gap-3 md:flex ">
-            <button className="px-3 text-sm font-[500] py-2 hover:shadow-md border-2 border-primary rounded-lg text-primary">
-              Sign In
-            </button>
-            <button className="px-3 text-sm font-[500] hover:shadow-md shadow-primary bg-primary rounded-lg text-white">
-              Sign Up
-            </button>
-          </div>
+   
 
           {/* Hamburger */}
 
