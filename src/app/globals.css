@@ -10,3 +10,10 @@
   box-sizing: border-box;
 }
 
+.__hero-text {
+  @apply mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins
+}
+
+.__hero-subtext {
+  @apply mt-6 leading-loose text-base text-center text-gray-500 md:text-start
+}

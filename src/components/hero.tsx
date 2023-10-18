@@ -27,13 +27,13 @@ export const Page = (props: Props) => {
       <div className='max-w-[1200px] mx-auto'>
         <div className="flex flex-col px-3 md:flex-row">
           <div className=" md:basis-[60%]">
-            <h1 className="mx-auto text-3xl w-[300px] md:w-full font-bold leading-tight md:mx-0 md:text-6xl font-Poppins">
+            <h1 className="__hero-text">
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
                 Improve{" "}
               </span>
                your skill with different way.
             </h1>
-            <p className="mt-6 leading-loose text-base text-center md:w-[450px] mx-3 md:mx-0 text-gray-500 md:text-start">
+            <p className="__hero-subtext md:w-[450px] mx-3 md:mx-0">
               Lets take an online course to improve your skills in a different
               way, you can set your own study time according to your learning
               speed. So you can study comfortable and asborb the material

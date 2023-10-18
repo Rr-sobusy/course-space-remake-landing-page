@@ -1,5 +1,5 @@
 "use client"
-import { Header, Hero, MostPopular } from "@/components";
+import { Header, Hero, MostPopular, NewsLetter } from "@/components";
 import SimpleBar from "simplebar-react";
 
 //* Scrollbar library to simplify the scroll bar design
@@ -16,6 +16,7 @@ export default function Home() {
         <Header />
         <Hero />
         <MostPopular />
+        <NewsLetter />
       </SimpleBar>
     </>
   );
