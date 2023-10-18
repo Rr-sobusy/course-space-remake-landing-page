@@ -35,7 +35,7 @@ export const CourseCard: FC<CourseCardProps> = ({ item }) => {
         alt=""
       />
       <div className="flex flex-col justify-between min-h-[160px]">
-        <h1 className="text-[1.25rem] lg:text-[1rem] font-bold text-gray-600">
+        <h1 className="text-[1.25rem] lg:text-[1rem] font-bold text-gray-800">
           {item.title}
         </h1>
        <div className="flex gap-2 items-center font-semibold text-gray-600">
