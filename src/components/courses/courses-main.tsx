@@ -2,7 +2,7 @@
 
 import React from "react";
 import Slider from "react-slick";
-import { CourseCard, CourseDatas } from "./courses";
+import { CourseCard, CourseDatas } from ".";
 import { useMediaQuery } from "react-responsive";
 
 type Props = {};

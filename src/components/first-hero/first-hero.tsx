@@ -1,12 +1,11 @@
-import React from 'react'
-import Image from 'next/image';
-import { CustomTypography } from '@/ui-components/CustomTypography';
-import {AiOutlinePlayCircle as Play} from 'react-icons/ai'
-import {PiCertificateLight as Certificate} from 'react-icons/pi'
+import React from "react";
+import Image from "next/image";
+import { CustomTypography } from "@/ui-components/CustomTypography";
+import CustomButton from "@/ui-components/CustomButton";
+import { AiOutlinePlayCircle as Play } from "react-icons/ai";
+import { PiCertificateLight as Certificate } from "react-icons/pi";
 
-
-
-type Props = {}
+type Props = {};
 
 const HeroStats: { label: string; value: string }[] = [
   {
@@ -16,10 +15,11 @@ const HeroStats: { label: string; value: string }[] = [
   {
     label: "Quality Course",
     value: "200k+",
-  },{
-    label : 'Experienced Mentores',
-    value : '20K+'
-  }
+  },
+  {
+    label: "Experienced Mentores",
+    value: "20K+",
+  },
 ];
 
 export const Page = (props: Props) => {
@@ -41,15 +41,21 @@ export const Page = (props: Props) => {
               easily.
             </p>
             <div className="flex justify-center gap-3 mt-6 md:justify-start">
-              <button className="px-4 hover:animate-[custom_2s_ease-out_.0s_infinite] py-2 font-semibold border rounded-lg text-primary border-primary">
+              <CustomButton
+                className="font-semibold hover:animate-[custom_2s_ease-out_.0s_infinite]"
+                variant="outlined"
+              >
                 Get Started
-              </button>
-              <button className="flex hover:animate-[custom_2s_ease-out_.0s_infinite] items-center gap-2 px-4 py-2 font-semibold text-white rounded-lg bg-primary">
+              </CustomButton>
+              <CustomButton
+                className="font-semibold flex items-center gap-2 hover:animate-[custom_2s_ease-out_.0s_infinite]"
+                variant="contained"
+              >
                 <span>
                   <Play size={20} />
                 </span>
                 Watch Video
-              </button>
+              </CustomButton>
             </div>
           </div>
 
@@ -98,4 +104,3 @@ export const Page = (props: Props) => {
     </section>
   );
 };
-

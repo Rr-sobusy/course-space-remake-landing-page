@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState } from "react";
 import { AiOutlineMenu as Menu, AiOutlineClose as Close } from "react-icons/ai";
 import CustomButton from "@/ui-components/CustomButton";
@@ -10,7 +8,6 @@ export const Page = (props: Props) => {
   const [nav, setNav] = useState<boolean>(false);
   return (
     <>
-      {" "}
       <header className="bg-bcolor">
         <div className="flex justify-between font-Poppins items-center max-w-[1200px] mx-auto h-[84px] px-[24px]">
           <h1 className="text-[22px] font-[600]">
@@ -40,6 +37,10 @@ export const Page = (props: Props) => {
               </a>
             </li>
           </ul>
+          <div className="flex gap-3">
+            <CustomButton className="hidden md:block" variant="outlined">Sign in</CustomButton>
+            <CustomButton className="hidden md:block" variant="contained">Sign up</CustomButton>
+          </div>
    
 
           {/* Hamburger */}

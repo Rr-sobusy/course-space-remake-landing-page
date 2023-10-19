@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { NewsCardDatas, NewsCard } from "./news-letter";
+import { CustomTypography } from "@/ui-components/CustomTypography";
 
 type Props = {};
 
@@ -18,13 +19,13 @@ export const Page = (props: Props) => {
             />
           </div>
           <div className="px-5 mt-7 md:mt-0 grow">
-            <h1 className="__hero-text text-center md:text-start px-6">
+            <CustomTypography className="text-center md:text-start px-6" variant="heroText">
               Make your{" "}
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
                 Learning
               </span>{" "}
               enjoyable.
-            </h1>
+            </CustomTypography>
             <p className="__hero-subtext mx-5 my-3">
               Set the way of learning according to your wishes with some of the
               benefits that you get us, so you on enjoy the lessons that we
