@@ -20,7 +20,6 @@ export const CourseCard: FC<CourseCardProps> = ({ item }) => {
     setHovered(false);
   }
 
-
   return (
     <div
       onMouseEnter={handleHover}
@@ -38,15 +37,15 @@ export const CourseCard: FC<CourseCardProps> = ({ item }) => {
         <h1 className="text-[1.25rem] lg:text-[1rem] font-bold text-gray-800">
           {item.title}
         </h1>
-       <div className="flex gap-2 items-center font-semibold text-gray-600">
-       <ReactStars
-           value={item.rating}
+        <div className="flex gap-2 items-center font-semibold text-gray-600">
+          <ReactStars
+            value={item.rating}
             count={5}
             size={24}
             activeColor="#ffd700"
           />
           <p>{`(${item.raters})`}</p>
-       </div>
+        </div>
         <div className={`flex flex-row justify-between items-center`}>
           <p className="text-base text-gray-600">
             <span className="font-semibold text-primary">

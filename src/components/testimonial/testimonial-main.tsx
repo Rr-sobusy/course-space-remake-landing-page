@@ -1,7 +1,8 @@
 import React from "react";
 import Wrapper from "@/ui-components/Wrapper";
 import { CustomTypography } from "@/ui-components/CustomTypography";
-import TestimonialCarousel from "./testimonial-carousel";
+import { TestimonialCarousel as CarouselCard } from "./testimonial-card";
+import { TestimonialCardDatas } from "./testimonial-datas";
 import Image from "next/image";
 import Slider from "react-slick";
 
@@ -14,14 +15,16 @@ export const Page = (props: Props) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
   };
   return (
     <section className="bg-[var(--primary-bg)]">
       <Wrapper container className="my-4 py-[5rem]">
         <div className="flex flex-col lg:flex-row">
-          <div className=" lg:basis-[50%] mx-5">
+          <div className=" lg:max-w-[50%] mx-5">
             <CustomTypography
-              className="text-center lg:mx-auto lg:max-auto mx-[1.5rem] lg:text-start"
+              className="text-center mb-16 text-gray-800 lg:text-6xl md:text-3xl lg:mx-auto mx-[2rem] lg:text-start"
               variant="semiHeroText"
             >
               Testimonial What our{" "}
@@ -30,26 +33,15 @@ export const Page = (props: Props) => {
               </span>{" "}
               say
             </CustomTypography>
-            <div className="flex justify-between border border-black"> 
-              <div className="">
-                <Slider className="" {...settings}>
-             
-                 <div className="w-full mx-auto">
-                 <Image
-                      src="/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg"
-                      width={900}
-                      height={900}
-                      alt=""
-                    />
-                 </div>
-
-            
-                </Slider>
-              </div>
-              <div></div>
+            <div className="">
+              <Slider {...settings}>
+                {TestimonialCardDatas.map((content) => (
+                  <CarouselCard content={content} />
+                ))}
+              </Slider>
             </div>
-            rex
           </div>
+          
           {/*  Hidden if below 769px below */}
           <div className="hidden justify-center lg:flex md:basis-[50%]">
             <Image

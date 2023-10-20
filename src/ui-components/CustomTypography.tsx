@@ -2,9 +2,9 @@ import React from "react";
 import { cn } from "@/libs/utils/clsx";
 
 const textVariant = {
-  heroText: "text-3xl md:w-full font-bold leading-tight md:text-6xl",
+  heroText: "text-3xl md:w-full text-gray-800 font-bold leading-tight md:text-6xl",
   subText: "text-gray-500 leading-loose text-base",
-  semiHeroText : "text-2xl md:w-full font-semibold leading-tight md:text-5xl"
+  semiHeroText : "text-3xl md:w-full font-semibold tracking-normal md:text-5xl"
 };
 
 interface CustomTypographyInterface {
@@ -20,7 +20,7 @@ export const CustomTypography: React.FC<CustomTypographyInterface> = ({
   ...rest
 }) => {
   return (
-    <h1 {...rest} className={cn(`${textVariant[variant]}`, className)}>
+    <h1 {...rest} className={cn(`${textVariant[variant]} font-Poppins`, className)}>
       {children}
     </h1>
   );

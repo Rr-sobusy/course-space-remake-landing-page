@@ -28,7 +28,7 @@ export const Page = (props: Props) => {
       <div className="max-w-[1200px] my-[3.5rem] mx-auto">
         <div className="flex flex-col px-3 md:flex-row">
           <div className=" md:basis-[60%]">
-            <CustomTypography variant="heroText">
+            <CustomTypography className="max-w-[400px] md:max-w-full mx-auto text-center md:text-start md:max-w-auto" variant="heroText">
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
                 Improve{" "}
               </span>
