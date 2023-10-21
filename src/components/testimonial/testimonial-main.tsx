@@ -35,8 +35,8 @@ export const Page = (props: Props) => {
             </CustomTypography>
             <div className="">
               <Slider {...settings}>
-                {TestimonialCardDatas.map((content) => (
-                  <CarouselCard content={content} />
+                {TestimonialCardDatas.map((content, index) => (
+                  <CarouselCard key={index} content={content} />
                 ))}
               </Slider>
             </div>

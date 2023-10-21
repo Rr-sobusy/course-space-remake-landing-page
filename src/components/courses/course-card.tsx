@@ -24,7 +24,7 @@ export const CourseCard: FC<CourseCardProps> = ({ item }) => {
     <div
       onMouseEnter={handleHover}
       onMouseLeave={handleLeave}
-      className="flex flex-col gap-6 px-3 py-3 mx-1 bg-white rounded-lg font-Poppins"
+      className="flex flex-col gap-6 px-3 py-3 mx-2 bg-white rounded-lg font-Poppins"
     >
       <Image
         className="rounded-lg"

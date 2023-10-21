@@ -32,8 +32,8 @@ export const Page = (props: Props) => {
               provide.
             </p>
             <div className="grid md:grid-cols-2 gap-3">
-              {NewsCardDatas.map((newsCard) => (
-                <NewsCard item={newsCard} />
+              {NewsCardDatas.map((newsCard, index) => (
+                <NewsCard key={index} item={newsCard} />
               ))}
             </div>
           </div>
