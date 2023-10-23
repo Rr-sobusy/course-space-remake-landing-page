@@ -28,6 +28,7 @@ export const Footer = (props: Props) => {
             <div className="flex gap-2">
               {Icons.map((icon, index) => (
                 <Image
+                  className="cursor-pointer"
                   key={index}
                   height={15}
                   width={25}
@@ -69,14 +70,17 @@ export const Footer = (props: Props) => {
               Menu
             </CustomTypography>
             <ul className="flex flex-col gap-2 mt-3">
-              {["Home", "Courses", "Testimonial", "Mentors"].map((content) => (
-                <CustomTypography
-                  className="text-sm text-white"
-                  variant="subText"
-                >
-                  {content}
-                </CustomTypography>
-              ))}
+              {["Home", "Courses", "Testimonial", "Mentors"].map(
+                (content, index) => (
+                  <CustomTypography
+                    key={index}
+                    className="text-sm text-white"
+                    variant="subText"
+                  >
+                    {content}
+                  </CustomTypography>
+                )
+              )}
             </ul>
           </div>
           <div className="lg:basis-[20%]">
@@ -87,8 +91,14 @@ export const Footer = (props: Props) => {
               About
             </CustomTypography>
             <ul className="flex flex-col gap-2 mt-3">
-              {["Contact ss", "Privacy & Policy", "Terms and Condition", "FAQ"].map((content) => (
+              {[
+                "Contact ss",
+                "Privacy & Policy",
+                "Terms and Condition",
+                "FAQ",
+              ].map((content, index) => (
                 <CustomTypography
+                  key={index}
                   className="text-sm text-white"
                   variant="subText"
                 >

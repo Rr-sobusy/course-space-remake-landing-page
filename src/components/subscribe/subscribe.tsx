@@ -23,9 +23,9 @@ export const Subscribe = (props: Props) => {
           </div>
           <div className="flex flex-col w-full gap-3 mt-10 md:w-1/2 md:flex-row place-self-center justify-self-center">
             <input
-              type="text"
+              type="email"
               placeholder="Enter you email address"
-              className="font-Poppins basis-auto md:basis-[80%] mx-[1.5rem] md:mx-0 text-gray-800 h-[40px] outline-none px-4 py-1 rounded-xl bg-white"
+              className="font-Poppins basis-auto md:basis-[80%] mx-[1.5rem] md:mx-0 text-gray-800 h-[50px] outline-none px-4 py-1 rounded-xl bg-white"
             />
             <CustomButton
               className="mx-auto min-w-1/4 md:w-auto"
