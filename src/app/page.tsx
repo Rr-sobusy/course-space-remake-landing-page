@@ -1,26 +1,34 @@
-"use client"
-import { Header, Hero, MostPopular, NewsLetter , Testimonial, Mentors} from "@/components";
+"use client";
+import {
+  Header,
+  Hero,
+  MostPopular,
+  NewsLetter,
+  Testimonial,
+  Mentors,
+  Subscribe,
+  Footer
+} from "@/components";
 import SimpleBar from "simplebar-react";
 
 //* Scrollbar library to simplify the scroll bar design
-import 'simplebar-react/dist/simplebar.min.css';
+import "simplebar-react/dist/simplebar.min.css";
 
 //* Carousel library
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
 export default function Home() {
   return (
     <>
-    
-        <Header />
-        <Hero />
-        <MostPopular />
-        <NewsLetter />
-        <Testimonial />
-        <Mentors />
-    
+      <Header />
+      <Hero />
+      <MostPopular />
+      <NewsLetter />
+      <Testimonial />
+      <Mentors />
+      <Subscribe />
+      <Footer />
     </>
   );
 }

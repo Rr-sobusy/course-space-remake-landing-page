@@ -8,7 +8,6 @@ import { HeroStats } from "./hero-stats-data";
 
 type Props = {};
 
-
 export const Page = (props: Props) => {
   return (
     <section className="bg-bcolor">
@@ -16,13 +15,16 @@ export const Page = (props: Props) => {
         <div className="flex flex-col px-3 md:flex-row">
           <div className=" md:basis-[60%]">
             <CustomTypography
-              className="max-w-[400px] md:max-w-full mx-auto text-center md:text-start md:max-w-auto"
+              className="max-w-[470px] md:max-w-full mx-auto text-center md:text-start md:max-w-auto"
               variant="heroText"
             >
               <span className="text-primary border-b-4 border-[#FFDD84] leading-loose">
                 Improve{" "}
               </span>
-              your skill with different way.
+              <span>
+                <span>your skill{" "}</span>
+              </span>
+              with different way.
             </CustomTypography>
             <p className="__hero-subtext md:w-[450px] mx-3 md:mx-0">
               Lets take an online course to improve your skills in a different
