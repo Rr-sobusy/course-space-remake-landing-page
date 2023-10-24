@@ -57,7 +57,7 @@ export const Page = (props: Props) => {
               width={500}
               height={500}
               className="relative z-0 w-full h-full rounded-lg"
-              src="/images/th (1).jpeg"
+              src="/images/hero-image.jpeg"
               alt=""
             />
             <div className="relative z-10 md:mt-5 -mt-[4rem] flex max-w-[330px] md:w-[50%] md:-ml-[2rem] bg-white shadow-md rounded-xl">
