@@ -7,7 +7,7 @@ import {
   Testimonial,
   Mentors,
   Subscribe,
-  Footer
+  Footer,
 } from "@/components";
 import SimpleBar from "simplebar-react";
 
@@ -21,14 +21,16 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
     <>
-      <Header />
-      <Hero />
-      <MostPopular />
-      <NewsLetter />
-      <Testimonial />
-      <Mentors />
-      <Subscribe />
-      <Footer />
+      {/* <SimpleBar style={{ maxHeight: "100vh" }}> */}
+        <Header />
+        <Hero />
+        <MostPopular />
+        <NewsLetter />
+        <Testimonial />
+        <Mentors />
+        <Subscribe />
+        <Footer />
+      {/* </SimpleBar> */}
     </>
   );
 }
