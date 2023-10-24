@@ -21,7 +21,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   return (
     <>
-      {/* <SimpleBar style={{ maxHeight: "100vh" }}> */}
+      <SimpleBar style={{ maxHeight: "100vh" }}>
         <Header />
         <Hero />
         <MostPopular />
@@ -30,7 +30,7 @@ export default function Home() {
         <Mentors />
         <Subscribe />
         <Footer />
-      {/* </SimpleBar> */}
+      </SimpleBar>
     </>
   );
 }
