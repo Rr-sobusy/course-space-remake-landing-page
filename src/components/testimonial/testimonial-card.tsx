@@ -11,7 +11,7 @@ export const TestimonialCarousel: React.FC<CardTypes> = ({content}) => {
   return (
     <div className="flex flex-col px-5 min-h-[350px] gap-8">
       <CustomTypography
-        className="text-gray-600 text-lg md:text-lg lg:text-xl"
+        className="text-lg text-gray-600 md:text-lg lg:text-xl"
         variant="semiHeroText"
       >
         {content.title}
@@ -31,7 +31,7 @@ export const TestimonialCarousel: React.FC<CardTypes> = ({content}) => {
         />
         <div className="flex flex-col justify-evenly">
           <CustomTypography
-            className="text-gray-600 font-semibold"
+            className="font-semibold text-gray-600"
             variant="subText"
           >
           {content.name}

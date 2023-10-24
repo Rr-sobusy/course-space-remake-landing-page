@@ -2,9 +2,13 @@ import React, { useState, useRef } from "react";
 import Slider from "react-slick";
 import { CourseCard, CourseDatas } from ".";
 import { useMediaQuery } from "react-responsive";
-import CoursesPagination from "./card-paginator";
+import PaginatorDots from "./card-paginator";
+import PaginatorArrow from "./card-paginator-arrow";
 import CustomButton from "@/ui-components/CustomButton";
-import * as AiIcons from "react-icons/ai";
+import {
+  AiOutlineArrowRight as Right,
+  AiOutlineArrowLeft as Left,
+} from "react-icons/ai";
 
 type Props = {};
 export const Page = (props: Props) => {
@@ -46,27 +50,15 @@ export const Page = (props: Props) => {
               ))}
             </Slider>
             <div className="flex flex-col items-center justify-between gap-4 mt-5 ml-2 lg-gap-0 lg:flex-row">
-              <CoursesPagination
+              <PaginatorDots
                 clickHandler={handleChangeCarouselView}
                 activeList={activeCard}
                 list={CourseDatas}
               />
-              <div className="flex gap-4">
-                <CustomButton
-                  onClick={() => carouselRef.current?.slickPrev()}
-                  className="px-2 py-2 hover:bg-[var(--primary-color)] hover:text-white font-bold bg-[var(--primary-bg)] border-0 rounded-full"
-                  variant="outlined"
-                >
-                  <AiIcons.AiOutlineArrowLeft size={20} />
-                </CustomButton>
-                <CustomButton
-                  onClick={() => carouselRef.current?.slickNext()}
-                  className="px-2 py-2 hover:bg-[var(--primary-color)] hover:text-white font-bold bg-[var(--primary-bg)] border-0 rounded-full"
-                  variant="outlined"
-                >
-                  <AiIcons.AiOutlineArrowRight size={20} />
-                </CustomButton>
-              </div>
+              <PaginatorArrow
+                handleNext={() => carouselRef.current?.slickNext()}
+                handlePrev={() => carouselRef.current?.slickNext()}
+              />
             </div>
           </div>
         </div>
