@@ -57,7 +57,7 @@ export const Page = (props: Props) => {
               />
               <PaginatorArrow
                 handleNext={() => carouselRef.current?.slickNext()}
-                handlePrev={() => carouselRef.current?.slickNext()}
+                handlePrev={() => carouselRef.current?.slickPrev()}
               />
             </div>
           </div>

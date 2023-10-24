@@ -7,7 +7,7 @@ type Props = {};
 
 export const Subscribe = (props: Props) => {
   return (
-    <section className="bg-[var(--primary-bg)] py-[4.5rem]">
+    <section className="bg-[var(--primary-bg)] py-[5.75rem]">
       <Wrapper className="px-4 md:px-2" container>
         <div className="w-[100%] bg-[#FFAF35] flex flex-col justify-center min-h-[320px] rounded-2xl">
           <div className="max-w-[700px] mx-auto">

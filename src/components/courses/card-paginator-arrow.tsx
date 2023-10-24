@@ -1,5 +1,5 @@
 /**
- * ! Also reused in mentos tab
+ * ! Also reused in mentors tab
  */
 
 import React from "react";

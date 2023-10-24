@@ -11,7 +11,7 @@ export const NewsCard = ({ item }) => {
     <div className="flex py-4 rounded-lg shadow-sm bg-white items-center font-Poppins">
       <div className="md:basis-[20%]">
         <IconComponent
-          className="rounded-full basis-[20%] bg-primary mx-auto text-white px-2 py-2 h-10 w-10"
+          className="rounded-full basis-[20%] ml-3 bg-primary text-white px-2 py-2 h-10 w-10"
           size={15}
         />
       </div>
