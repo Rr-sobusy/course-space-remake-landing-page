@@ -37,7 +37,12 @@ export const Footer = (props: Props) => {
                 />
               ))}
             </div>
-            <CustomTypography className="text-white text-sm tracking-wider" variant="subText">Built by Rex</CustomTypography>
+            <CustomTypography
+              className="text-white text-sm flex items-center gap-1 tracking-wider"
+              variant="subText"
+            >
+              <span className="text-xl">&copy;</span> 2023 Rex Hernandez
+            </CustomTypography>
           </div>
           <div className="lg:basis-[20%]">
             <CustomTypography
@@ -93,7 +98,7 @@ export const Footer = (props: Props) => {
             </CustomTypography>
             <ul className="flex flex-col gap-2 mt-3">
               {[
-                "Contact ss",
+                "Contact Us",
                 "Privacy & Policy",
                 "Terms and Condition",
                 "FAQ",
