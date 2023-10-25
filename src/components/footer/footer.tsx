@@ -37,6 +37,7 @@ export const Footer = (props: Props) => {
                 />
               ))}
             </div>
+            <CustomTypography className="text-white text-sm tracking-wider" variant="subText">Built by Rex</CustomTypography>
           </div>
           <div className="lg:basis-[20%]">
             <CustomTypography
